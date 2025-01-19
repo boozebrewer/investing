@@ -173,7 +173,7 @@ try:
         axes[idx].set_visible(False)
 
     plt.tight_layout()
-    plt.show()
+    plt.savefig('docs/market_analysis.png', dpi=300, bbox_inches='tight')
 
 except Exception as e:
     print(f"An error occurred: {str(e)}")

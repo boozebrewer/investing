@@ -32,13 +32,72 @@
             color: #666;
             margin-bottom: 20px;
         }
+        .description {
+            margin: 20px 0;
+            line-height: 1.6;
+            color: #444;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 15px 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Market Analysis Dashboard</h1>
         <div class="timestamp">Last updated: <span id="timestamp"></span></div>
+        
+        <div class="description">
+            <div class="highlight">
+                <h2>Portfolio Strategy: Sector Leaders Analysis</h2>
+                <p>This analysis tracks the performance of an innovative portfolio comprising the largest companies from each sector of the S&P 500. This approach provides broad market exposure while focusing on industry leaders with proven track records.</p>
+            </div>
+
+            <h3>Why Sector Leaders?</h3>
+            <ul>
+                <li><strong>Market Dominance:</strong> These companies typically benefit from economies of scale, strong market positions, and significant competitive advantages.</li>
+                <li><strong>Sector Representation:</strong> By selecting leaders from each sector, we maintain diversification while focusing on industry champions.</li>
+                <li><strong>Innovation Leaders:</strong> These companies often drive innovation and set industry trends, potentially leading to sustainable long-term growth.</li>
+            </ul>
+
+            <h3>Portfolio Composition</h3>
+            <p>Our tracked companies include (Market Cap in Billions USD):</p>
+            <ul>
+                <li>Technology: 
+                    <ul>
+                        <li>Google/Alphabet (GOOG) - $1,840B</li>
+                        <li>Microsoft (MSFT) - $3,120B</li>
+                    </ul>
+                </li>
+                <li>Consumer: 
+                    <ul>
+                        <li>Amazon (AMZN) - $1,780B</li>
+                        <li>Walmart (WMT) - $420B</li>
+                    </ul>
+                </li>
+                <li>Energy: ExxonMobil (XOM) - $460B</li>
+                <li>Financials: Berkshire Hathaway (BRK-B) - $880B</li>
+                <li>Healthcare: Eli Lilly (LLY) - $740B</li>
+                <li>Industrials: General Electric (GE) - $170B</li>
+                <li>Materials: Linde (LIN) - $210B</li>
+                <li>Real Estate: Prologis (PLD) - $110B</li>
+                <li>Utilities: NextEra Energy (NEE) - $105B</li>
+            </ul>
+        </div>
+
         <img src="market_analysis.png" alt="Market Analysis">
+        
+        <div class="description">
+            <h3>Understanding the Charts</h3>
+            <ul>
+                <li><strong>Annual Performance Charts:</strong> Compare each company's performance against the S&P 500 benchmark year by year.</li>
+                <li><strong>Cumulative Returns:</strong> Track how our sector-leaders portfolio performs against the S&P 500 over time.</li>
+                <li><strong>Current Year Details:</strong> Detailed breakdown of each company's performance in the current year.</li>
+            </ul>
+        </div>
     </div>
     <script>
         document.getElementById('timestamp').textContent = new Date().toLocaleString();
